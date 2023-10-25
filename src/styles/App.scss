@@ -1,2 +1,12 @@
 @import 'core/reset';
-@import 'layout/app';
+@import 'core/variables';
+
+.page__container{
+    background-color: $orange;
+}
+
+.container__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

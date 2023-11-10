@@ -1,12 +1,47 @@
 @import 'core/reset';
 @import 'core/variables';
+@import 'core/buttons';
 
-.page__container{
-    background-color: $orange;
+.page__container {
+  background-color: $white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container__main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $background-pink;
+  padding-top: 20px;
+  flex-grow: 1;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid $pink;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  @media (min-width: 750px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.logo {
+  padding-bottom: 5px;
+  height: 70px;
+}
+
+.buttons__container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+

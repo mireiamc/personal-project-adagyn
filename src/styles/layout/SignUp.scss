@@ -1,0 +1,76 @@
+@import '../core/reset';
+@import '../core/variables';
+@import '../core/buttons';
+
+.signin {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 4px solid $dark-pink;
+    border-radius: 10px;
+    // width: 500px;
+    margin: 20px;
+    padding: 30px;
+    color: $black;
+    font-family: $text;
+    background-color: white;
+  }
+
+  &__title {
+    font-size: 32px;
+    padding-bottom: 10px;
+    color: $black;
+    font-family: $text;
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: $black;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    @media (min-width: 750px) {
+      width: 600px;
+    }
+  }
+
+  &__label {
+    font-size: 18px;
+  }
+
+  &__input {
+    border-radius: 10px;
+    border: 1.5px solid $pink;
+    padding: 5px;
+    // max-width: 400px;
+  }
+}
+
+.container__checkbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding-top: 10px;
+  font-size: 16px;
+  color: $pink;
+}
+
+.signup__btn {
+  width: fit-content;
+  align-self: center;
+}
+
+// .signin__input{
+//   &:checked {
+//     background-color: $dark-pink;
+//   }
+// }
+

@@ -1,0 +1,43 @@
+@import '../core/reset';
+@import '../core/variables';
+@import '../core/buttons';
+
+.info {
+  &__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+  }
+  &__title {
+    margin-top: 20px;
+    color: $black;
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-family: $title;
+    // font-weight: 700;
+    // font-weight: 600;
+  }
+  &__subtitle {
+    color: $pink;
+    font-size: 24px;
+    font-family: $title-2;
+    text-align: center;
+  }
+  &__text {
+    padding: 30px;
+    line-height: 1.2;
+    color: $black;
+    font-family: $text;
+    font-size: 18px;
+    text-align: justify;
+    @media (min-width: 750px) {
+      column-count: 2;
+      column-gap: 30px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}

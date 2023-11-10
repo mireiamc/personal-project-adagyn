@@ -1,6 +1,13 @@
+import { Route, Routes, Link } from 'react-router-dom';
 import '../styles/App.scss';
+// import LogIn from './Landing/LogIn';
+// import SignUp from './Landing/SignUp';
+import Info from './Landing/Info';
+import logo from '../assets/logo.png';
+import SignUp from './Landing/SignUp';
 import LogIn from './Landing/LogIn';
-import SignIn from './Landing/SignIn';
+import SignUpDone from './Landing/SignUpDone';
+import Mainpage from './Main/Mainpage';
 
 // Fichero src/components/App.jsx
 // import {useState} from 'react';
@@ -10,12 +17,27 @@ const App = () => {
 
   return (
     <div className='page__container'>
-      <header>
-        <img src='' alt='' />
+      <header className='header'>
+        <Link to='/'>
+          <img className='logo' src={logo} alt='Logo' />
+        </Link>
+        <div className='buttons__container'>
+          <Link to='/inicia-sesion' className='button--black'>
+            Iniciar sesión
+          </Link>
+          <Link to='/registrate' className='button--pink'>
+            Regístrate
+          </Link>
+        </div>
       </header>
       <main className='container__main'>
-        <LogIn />
-        <SignIn />
+        <Routes>
+          <Route path='/' element={<Info />} />
+          <Route path='/registrate' element={<SignUp />} />
+          <Route path='/inicia-sesion' element={<LogIn />} />
+          <Route path='/signupdone' element={<SignUpDone />} />
+          <Route path='/mainpage' element={<Mainpage />} />
+        </Routes>
       </main>
     </div>
   );

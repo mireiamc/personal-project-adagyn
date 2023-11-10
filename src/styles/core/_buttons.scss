@@ -1,0 +1,49 @@
+.button {
+  &--black {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $black;
+    color: $white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: $text;
+    &:hover {
+        background-color: $soft-pink;
+        color: $black;
+    }
+  }
+  &--pink {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $dark-pink;
+    color: $white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: $text;
+    &:hover {
+        background-color: $soft-pink;
+        color: $black;
+    }
+  }
+}
+
+// Palabras destacadas:
+
+.special__word{
+  color: $black;
+  font-family: $title-2;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+

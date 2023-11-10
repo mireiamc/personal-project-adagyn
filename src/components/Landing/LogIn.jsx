@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../../styles/layout/LogIn.scss';
 
 const LogIn = () => {
@@ -9,10 +10,13 @@ const LogIn = () => {
         <input className='login__inputs' type='text' required />
         <label className='login__labels'>Contraseña</label>
         <input className='login__inputs' type='password' required />
-        <input className='login__btn' type='submit' value='Entrar' />
+        <input className='button--pink' type='submit' value='Entrar' />
       </form>
       <p>
-        ¿Todavía no te has registrado? <a href='#'>Regístrate</a>
+        ¿Todavía no te has registrado?
+        <Link to='/registrate' className='signup'>
+          Regístrate
+        </Link>
       </p>
     </div>
   );

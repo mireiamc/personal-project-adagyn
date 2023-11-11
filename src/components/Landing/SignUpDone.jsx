@@ -11,7 +11,7 @@ const SignUpDone = () => {
         opciones por ti, si deseas cambiarlas sólo tienes que hacerlo desde la
         configuración.
       </p>
-      <Link to='/mainpage' className='button--pink'>
+      <Link to='/home' className='button--black'>
         Entrar
       </Link>
     </div>

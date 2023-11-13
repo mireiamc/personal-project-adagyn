@@ -34,33 +34,58 @@ const Home = () => {
           </li>
         </ul>
       </nav>
-      <section className='left__container'>
-        <img className='home__image' src={grafico} alt='grafico' />
-        <section className='analysis__container'>
-          <h2 className='analysis__title'>Últimos análisis (30 de Nov)</h2>
-          <ul className='analysis__list'>
-            <li className='analysis__item'>
-              TSH <span>2.5</span>
-              <span className='happyface'>&#9786;</span>
-            </li>
-            <li className='analysis__item'>
-              Insulina <span>28</span>
-              <span className='happyface'>&#9786;</span>
-            </li>
-            <li className='analysis__item'>
-              T4 Libre <span>6</span>
-              <span className='sadface'>&#9785;</span>
-            </li>
-            <li className='analysis__item'>
-              Glucosa <span>68</span>
-              <span className='happyface'>&#9786;</span>
-            </li>
-            <li className='analysis__item'>
-              Calcio <span>90</span>
-              <span className='sadface'>&#9785;</span>
-            </li>
-          </ul>
+      <section className='big__container'>
+        <section className='left__container'>
+          <img className='home__image' src={grafico} alt='grafico' />
         </section>
+        <section className='right__container'>
+          <h3 className='right__container--title'>Mis próximas citas</h3>
+          <div className='date__container'>
+            <p className='date__container--subtitle'>Dra. Mari Mer. Pérez</p>
+            <p>Centro Womer</p>
+            <p>Ginecología</p>
+            <p className='date__container--subtitle'>
+              Viernes, 24 de diciembre
+            </p>
+          </div>
+          <h3 className='right__container--title'>Mi medicación</h3>
+          <div className='medication__container'>
+            <p className='medication__container--subtitle'>Eutirox 175mg</p>
+            <p>1 comprimido al día</p>
+            <p className='medication__container--subtitle'>
+              Myoinositol Lambert's
+            </p>
+            <p>3 comprimidos al día</p>
+          </div>
+        </section>
+      </section>
+      <section className='analysis__container'>
+        <div>
+          <h2 className='analysis__title'>Últimos análisis</h2>
+          <h3 className='analysis__title--date'>30 de Noviembre</h3>
+        </div>
+        <ul className='analysis__list'>
+          <li className='analysis__item'>
+            TSH <span>2.5</span>
+            <span className='happyface'>&#9786;</span>
+          </li>
+          <li className='analysis__item'>
+            Insulina <span>28</span>
+            <span className='happyface'>&#9786;</span>
+          </li>
+          <li className='analysis__item'>
+            T4 Libre <span>6</span>
+            <span className='sadface'>&#9785;</span>
+          </li>
+          <li className='analysis__item'>
+            Glucosa <span>68</span>
+            <span className='happyface'>&#9786;</span>
+          </li>
+          <li className='analysis__item'>
+            Calcio <span>90</span>
+            <span className='sadface'>&#9785;</span>
+          </li>
+        </ul>
       </section>
     </div>
   );
